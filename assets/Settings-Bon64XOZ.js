@@ -1,0 +1,1 @@
+import{j as s,S as e}from"./index-Cyfu9DX1.js";import{u as i}from"./useFeatureTranslation-DvyayMb7.js";const a=()=>{const t=i("settings");return s.jsxs("div",{className:"flex gap-1 items-center",children:[s.jsx(e,{size:24}),s.jsx("span",{children:t("title")})]})};export{a as default};
