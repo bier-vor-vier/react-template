@@ -9,5 +9,5 @@ export default defineConfig({
     build: {
         cssCodeSplit: true,
     },
-    base: '/bier-vor-vier/react-template/'
+    base: '/react-template/'
 })
