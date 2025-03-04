@@ -30,7 +30,7 @@ const App = () => {
             <ThemeProvider>
                 {loading && <SplashScreen onFinish={() => setLoading(false)}/>}
                 <AuthProvider>
-                    <Router>
+                    <Router basename={'/react-template'}>
                         <AppRoutes/>
                     </Router>
                 </AuthProvider>

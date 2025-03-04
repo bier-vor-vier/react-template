@@ -1,4 +1,4 @@
-import {ComponentType, useEffect, useRef} from "react";
+import {ComponentType} from "react";
 import {FieldError} from "react-hook-form";
 import {form} from "@style/form.ts";
 
@@ -20,19 +20,12 @@ const withFormField = <T extends object>(
     );
 };
 
-
 const TextInput = (props: React.InputHTMLAttributes<HTMLInputElement>) => {
-    const inputRef = useRef<HTMLInputElement>(null);
-    useEffect(() => {
-        if (props.autoFocus && inputRef.current) {
-            inputRef.current.focus();
-        }
-    }, [props.autoFocus]);
-    return <input {...props} placeholder=" " ref={inputRef}/>;
+    return <input {...props} placeholder=" " />;
 };
 
 const PasswordInput = (props: React.InputHTMLAttributes<HTMLInputElement>) => {
-    return <TextInput type="password" {...props} />;
+    return <TextInput {...props} type="password" />;
 };
 
 export const FormTextInput = withFormField(TextInput);
