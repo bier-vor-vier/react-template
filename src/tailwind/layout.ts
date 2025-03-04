@@ -9,11 +9,11 @@ const main = tv({
 });
 
 const sidebar = tv({
-    base: "h-screen bg-gray-200 text-black dark:bg-gray-900 dark:text-white flex flex-col p-1 transition-all duration-300",
+    base: "h-screen shadow-md bg-gray-200 text-black dark:bg-gray-900 dark:text-white flex flex-col p-1 transition-all duration-300",
     variants: {
         collapsed: {
             true: "w-auto",
-            false: "w-64",
+            false: "w-48",
         },
     },
 });

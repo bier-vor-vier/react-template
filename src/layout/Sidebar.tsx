@@ -1,24 +1,22 @@
 import {Link, useLocation} from "react-router-dom";
-import {BarChart2, Home, Menu, Settings, Tent} from "lucide-react";
+import {BarChart2, Home, Settings, Tent} from "lucide-react";
 import {useIsAuthenticated} from "@store/appSelectors.ts";
 import {link, sidebar} from "@style/layout.ts";
-import {selectIsCollapsed, toggleSidebar} from "@store/appSlice.ts";
-import {useDispatch, useSelector} from "react-redux";
+import {selectIsCollapsed} from "@store/appSlice.ts";
+import {useSelector} from "react-redux";
+import Logo from "@components/Logo.tsx";
 
 const Sidebar = () => {
 
     const collapsed = useSelector(selectIsCollapsed);
-    const dispatch = useDispatch();
+
 
     return (
         <aside className={sidebar({collapsed})}>
-            {/* Toggle Button */}
-            <button
-                onClick={() => dispatch(toggleSidebar())}
-                className="flext px-3 items-center mb-6 p-2 rounded"
-            >
-                <Menu size={24}/>
-            </button>
+
+            <div className="flex items-center justify-center py-4">
+                <Logo size={collapsed ? 12 : 64}/>
+            </div>
 
             {/* Navigation */}
             <nav className="flex-grow space-y-2">

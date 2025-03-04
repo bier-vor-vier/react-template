@@ -1,6 +1,7 @@
 import {useTranslation} from "react-i18next";
 import {useDispatch} from "react-redux";
 import {setLocale} from "@store/appSlice.ts";
+import {button} from "@style/button.ts";
 
 const LocaleButton = () => {
 
@@ -16,7 +17,7 @@ const LocaleButton = () => {
         <select
             onChange={changeLanguage}
             value={i18n.language}
-            className="p-2 border rounded-lg bg-gray-200 dark:bg-gray-800 text-black dark:text-white"
+            className={button({variant: "secondary"})}
         >
             <option value="en">🇬🇧 English</option>
             <option value="de">🇩🇪 Deutsch</option>

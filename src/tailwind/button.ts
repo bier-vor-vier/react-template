@@ -1,7 +1,7 @@
 import {tv} from "tailwind-variants";
 
 const button = tv({
-    base: "px-4 py-2 rounded-sm font-medium transition-all duration-200 flex items-center justify-center gap-2",
+    base: "px-4 py-2 shadow-sd rounded-sm font-medium transition-all duration-200 flex items-center justify-center gap-2",
     variants: {
         theme: {
             light: "bg-gray-200 text-black hover:bg-gray-300",
@@ -10,6 +10,7 @@ const button = tv({
         variant: {
             primary: "bg-blue-900 text-white hover:bg-blue-700 disabled:bg-gray-600",
             secondary: "bg-gray-200 text-gray-800 hover:bg-gray-300",
+            rounded: "bg-gray-200 text-gray-800 hover:bg-gray-300 rounded-full p-2" ,
             error: "bg-red-500 text-white hover:bg-red-600",
             outline: "border border-gray-500 text-gray-700 hover:bg-gray-100",
         },
@@ -21,7 +22,6 @@ const button = tv({
     },
     defaultVariants: {
         variant: "primary",
-        size: "md",
     },
 });
 export {button};

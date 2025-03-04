@@ -1,6 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {selectTheme, setTheme} from "@store/appSlice.ts";
 import {Moon, Sun} from "lucide-react";
+import {button} from "@style/button.ts";
 
 const ThemeButton = () => {
 
@@ -14,7 +15,7 @@ const ThemeButton = () => {
     return (
         <button
             onClick={() => toggleTheme()}
-            className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition"
+            className={button({variant: "rounded"})}
         >
             {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
         </button>
