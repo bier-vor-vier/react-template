@@ -1,17 +1,16 @@
 # React Template
 
-This **React template** provides a solid foundation for building modern web applications.  
-It includes essential libraries for **state management, form handling, internationalization, routing, styling, and animations**.
+This **React template** offers a robust foundation for developing modern web applications. It integrates essential libraries and tools for state management, form handling, internationalization, routing, styling, theming, and more.
 
 ## 📦 Included Packages and Features
 
 ### 🚀 Core Libraries
 - **[React](https://react.dev/)** - A JavaScript library for building user interfaces.
-- **[Vite](https://vitejs.dev/)** - Fast build tool for modern frontend projects.
-- **[TypeScript](https://www.typescriptlang.org/)** - Typed JavaScript for better code quality.
+- **[Vite](https://vitejs.dev/)** - A fast build tool for modern frontend projects.
+- **[TypeScript](https://www.typescriptlang.org/)** - Typed JavaScript for enhanced code quality.
 
 ### 📌 State Management
-- **[Redux Toolkit](https://redux-toolkit.js.org/)** - A structured way to manage state.
+- **[Redux Toolkit](https://redux-toolkit.js.org/)** - A structured approach to manage state.
 - **[Redux Persist](https://github.com/rt2zz/redux-persist)** - Persists and rehydrates the Redux store.
 
 ### 🎨 Styling & UI
@@ -21,9 +20,9 @@ It includes essential libraries for **state management, form handling, internati
 - **[Framer Motion](https://www.framer.com/motion/)** - Animations and transitions.
 
 ### 📄 Forms & Validation
-- **[React Hook Form](https://react-hook-form.com/)** - Easy-to-use form management.
+- **[React Hook Form](https://react-hook-form.com/)** - Simplifies form management.
 - **[Zod](https://zod.dev/)** - TypeScript-first schema validation.
-- **[@hookform/resolvers](https://react-hook-form.com/get-started#SchemaValidation)** - Connects Zod with React Hook Form.
+- **[@hookform/resolvers](https://react-hook-form.com/get-started#SchemaValidation)** - Integrates Zod with React Hook Form.
 
 ### 🌍 Internationalization
 - **[i18next](https://www.i18next.com/)** - Translation framework for multiple languages.
@@ -31,6 +30,15 @@ It includes essential libraries for **state management, form handling, internati
 
 ### 🔀 Routing
 - **[React Router](https://reactrouter.com/)** - Client-side routing for React applications.
+
+### 🌗 Light/Dark Mode
+- **Light/Dark Theme Toggle** - Allows users to switch between light and dark themes for better accessibility and user experience.
+
+### 🗂️ Project Structure
+- **Feature-Based Pattern** - Organizes code by feature, enhancing scalability and maintainability.
+
+### ⏳ Performance
+- **Code Splitting & Lazy Loading** - Loads components on demand to optimize performance.
 
 ## 🛠 Setup & Installation
 
