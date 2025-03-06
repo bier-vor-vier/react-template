@@ -1,0 +1,9 @@
+{
+  "title": "Anmelden",
+  "email": "E-Mail",
+  "email.min": "E-Mail ist erforderlich",
+  "email.email": "Ungültige E-Mail-Adresse",
+  "password": "Passwort",
+  "password.min": "Passwort muss mindestens 6 Zeichen haben"
+
+}
