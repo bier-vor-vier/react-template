@@ -5,16 +5,18 @@ import appSlice from "@store/appSlice.ts";
 import storage from 'redux-persist/lib/storage';
 import {createMigrate, persistReducer, persistStore} from 'redux-persist';
 import {migrations} from "@store/migrations.ts";
+import settingsSlice from "../features/settings/store/settingsSlice.ts";
 
 const reducer = combineReducers({
     auth: authSlice,
     app: appSlice,
+    settings: settingsSlice,
     [baseApi.reducerPath]: baseApi.reducer,
 });
 
 const persistConfig = {
     key: "root",
-    version: 1,
+    version: 2,
     storage,
     migrate: createMigrate(migrations, { debug: true }), // 🔥 Automatische Migrationen
 };
