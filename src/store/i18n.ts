@@ -13,7 +13,7 @@ i18n
         defaultNS: 'app',
         interpolation: {escapeValue: false},
         backend: {
-            loadPath: "src/{{ns}}/i18n/{{lng}}.json",
+            loadPath: "assets/{{ns}}/i18n/{{lng}}.json",
         },
     });
 
